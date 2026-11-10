@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Corner Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<style>
+    html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover{
+    color: brown;
+}
+.btn-warning:hover{
+    color: white;
+    background-color:green;
+    transform:translateY(-5px);
+    
+}
+.btn-warning:hover{
+    transition:0.4s ease-in-out;
+    
+}
+/* Menu Section */
+.menu {
+    background-color: #fff0dc;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.menu > h2 {
+    font-size: 36px;
+    color: #9b4b16;
+    margin-bottom: 10px;
+}
+
+.menu-intro {
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.food-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.food-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.food-info h4 {
+    color: #e76f00;
+    font-size: 22px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="#home">
+            <span class="text-warning">Foodie</span> Corner
+        </a>
+    
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+<div class="loc">
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="#contact" class="btn btn-warning ms-lg-3">
+                Book a Table
+            </a>
+
+        </div>
+
+    </div>
+</div>
+</nav>
+
+
+<main>
+
+<!-- HERO SECTION -->
+
+<section id="home">
+
+    <div class="bg-dark text-white text-center p-5"
+         style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('res.jpeg'); background-size:cover; background-position:center;">
+
+        <div class="container py-5">
+
+            <h1 class="display-3 fw-bold">
+                Welcome to <span class="text-warning">Foodie Corner</span>
+            </h1>
+
+            <h3 class="mt-3">
+                Delicious Food, Happy Moments!
+            </h3>
+
+            <p class="lead mt-3">
+                Enjoy delicious food prepared with fresh ingredients.
+                Experience amazing taste with your family and friends.
+            </p>
+
+            <a href="#menu" class="btn btn-warning btn-lg mt-3">
+                Explore Our Menu
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 mb-4">
+
+                <img src="res.jpeg"
+                     class="img-fluid rounded"
+                     alt="Restaurant">
+
+            </div>
+
+            <div class="col-md-6">
+
+                <h2 class="text-warning fw-bold">
+                    Welcome to Foodie Corner
+                </h2>
+
+                <p class="mt-3">
+                    Foodie Corner is a wonderful place where delicious
+                    food meets happiness. We prepare fresh and tasty
+                    dishes using quality ingredients.
+                </p>
+
+                <p>
+                    We offer different varieties of food including
+                    pizza, burger, pasta, biriyani and desserts.
+                    Our restaurant provides a comfortable dining
+                    experience for families and friends.
+                </p>
+
+                <p>
+                    Visit Foodie Corner and enjoy the best taste
+                    in every bite!
+                </p>
+
+                <a href="#menu" class="btn btn-warning">
+                    View Our Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MENU SECTION -->
+
+ <section class="menu" id="menu">
+
+            <h2>Our Popular Menu</h2>
+
+            <p class="menu-intro">
+                Discover our delicious and customer-favourite dishes.
+            </p>
+
+            <div class="menu-container">
+
+                <!-- Food 1 -->
+                <div class="food-card">
+                    <img src="burger.jpeg" alt="Burger">
+
+                    <div class="food-info">
+                        <h3>Cheese Burger</h3>
+                        <p>Juicy burger with cheese and fresh vegetables.</p>
+                        <h4>₹150</h4>
+                    </div>
+                </div>
+
+                <!-- Food 2 -->
+                <div class="food-card">
+                    <img src="pizza.jpeg" alt="Pizza">
+
+                    <div class="food-info">
+                        <h3>Italian Pizza</h3>
+                        <p>Delicious pizza topped with cheese and vegetables.</p>
+                        <h4>₹250</h4>
+                    </div>
+                </div>
+
+                <!-- Food 3 -->
+                <div class="food-card">
+                    <img src="biri.jpeg" alt="Chicken Biryani">
+
+                    <div class="food-info">
+                        <h3>Chicken Biryani</h3>
+                        <p>Traditional biryani with aromatic spices.</p>
+                        <h4>₹180</h4>
+                    </div>
+                </div>
+
+                <!-- Food 4 -->
+                <div class="food-card">
+                    <img src="pasta.jpeg" alt="Pasta">
+
+                    <div class="food-info">
+                        <h3>White Sauce Pasta</h3>
+                        <p>Creamy pasta prepared with special ingredients.</p>
+                        <h4>₹200</h4>
+                    </div>
+                </div>
+
+                <!-- Food 5 -->
+                <div class="food-card">
+                    <img src="rice.jpeg" alt="Fried Rice">
+
+                    <div class="food-info">
+                        <h3>Veg Fried Rice</h3>
+                        <p>Fresh vegetables mixed with delicious fried rice.</p>
+                        <h4>₹130</h4>
+                    </div>
+                </div>
+
+                <!-- Food 6 -->
+                <div class="food-card">
+                    <img src="ice.jpeg" alt="Ice Cream">
+
+                    <div class="food-info">
+                        <h3>Chocolate Ice Cream</h3>
+                        <p>Sweet and creamy chocolate ice cream.</p>
+                        <h4>₹90</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center text-warning fw-bold">
+            Contact Us
+        </h2>
+
+        <p class="text-center mb-5">
+            We are happy to serve you!
+        </p>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4">
+
+                <div class="p-4 shadow rounded h-100">
+
+                    <i class="bi bi-geo-alt-fill fs-1 text-warning"></i>
+
+                    <h5 class="fw-bold mt-3">Our Address</h5>
+
+                    <p>MG Road, Trivandrum, Kerala</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="p-4 shadow rounded h-100">
+
+                    <i class="bi bi-telephone-fill fs-1 text-warning"></i>
+
+                    <h5 class="fw-bold mt-3">Phone Number</h5>
+
+                    <p>+91 98765 43210</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="p-4 shadow rounded h-100">
+
+                    <i class="bi bi-envelope-fill fs-1 text-warning"></i>
+
+                    <h5 class="fw-bold mt-3">Email Address</h5>
+
+                    <p>foodiecorner@gmail.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center mt-5">
+
+            <h4 class="fw-bold">Opening Hours</h4>
+
+            <p>Monday - Sunday: 10:00 AM - 10:00 PM</p>
+
+            <a href="mailto:foodiecorner@gmail.com"
+               class="btn btn-warning btn-lg">
+                Make a Reservation
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <h3 class="fw-bold">
+            <span class="text-warning">Foodie</span> Corner
+        </h3>
+
+        <p>Delicious Food, Happy Moments!</p>
+
+        <div class="mb-3">
+
+        <a href="https://www.instagram.com/" class="text-warning fs-3 mx-2 link-opacity-75-hover" target="_blank">
+        <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/" class="text-warning fs-3 mx-2 link-opacity-75-hover" target="_blank">
+        <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.youtube.com/" class="text-warning fs-3 mx-2 link-opacity-75-hover" target="_blank">
+        <i class="bi bi-youtube"></i>
+        </a>
+
+        </div>
+
+        <hr>
+        <p class="mb-0">
+            &copy; 2026 Foodie Corner. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
